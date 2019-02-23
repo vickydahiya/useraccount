@@ -1,9 +1,16 @@
 package com.sclabs.useraccount.UserAccount.repository;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.validation.constraints.NotNull;
 
-@Entity
+@Entity(name="user_type")
 public class UserType {
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @NotNull
     private Long typeId;
     private String typeName;
 

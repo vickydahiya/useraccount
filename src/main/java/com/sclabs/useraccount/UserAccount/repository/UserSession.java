@@ -5,7 +5,7 @@ import javax.validation.constraints.NotNull;
 import java.sql.Time;
 import java.util.Date;
 
-@Entity
+@Entity(name="user_session")
 public class UserSession {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
