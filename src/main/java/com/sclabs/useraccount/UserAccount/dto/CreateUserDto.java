@@ -2,10 +2,18 @@ package com.sclabs.useraccount.UserAccount.dto;
 
 import com.sclabs.useraccount.UserAccount.common.Name;
 
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
+
 public class CreateUserDto {
+    @NotNull
+    @Size(min=4)
     private String firstName;
+    @NotNull
     private String lastName;
+    @NotNull
     private String emailId;
+    @NotNull
     private String password;
 
     public CreateUserDto(){
