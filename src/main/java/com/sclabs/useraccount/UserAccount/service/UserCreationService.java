@@ -1,6 +1,6 @@
 package com.sclabs.useraccount.UserAccount.service;
 
-import com.sclabs.useraccount.UserAccount.common.Name;
+//import com.sclabs.useraccount.UserAccount.common.Name;
 import com.sclabs.useraccount.UserAccount.dto.CreateUserDto;
 import com.sclabs.useraccount.UserAccount.repository.UserInfo;
 import com.sclabs.useraccount.UserAccount.repository.UserInfoRepository;
@@ -23,9 +23,9 @@ public class UserCreationService {
     public Long createUser(CreateUserDto createUserDto){
         //UserInfo ui = UserInfo.builder().
         UserInfo userInfo = new UserInfo();
-        Name name = new Name(createUserDto.getFirstName(),createUserDto.getLastName());
+        //Name name = new Name(createUserDto.getFirstName(),createUserDto.getLastName());
 
-        userInfo.setName(name);
+        userInfo.setName(createUserDto.getName());
         userInfo.setEmailId(createUserDto.getEmailId());
         userInfo.setPassword(createUserDto.getPassword());
         userInfo.setCreated(Date.from(Instant.now()));

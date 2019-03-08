@@ -1,14 +1,14 @@
 package com.sclabs.useraccount.UserAccount.common;
 
 import javax.persistence.Embeddable;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.validation.constraints.NotNull;
 
 @Embeddable
 public class Name {
 
+    @NotNull
     private String firstName;
+    @NotNull
     private String lastName;
     private String middleName;
 

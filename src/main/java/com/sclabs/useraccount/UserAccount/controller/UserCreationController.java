@@ -25,8 +25,10 @@ public class UserCreationController {
         Map<String,Long> user = new HashMap<>();
 
         Long id =  userCreationService.createUser(createUserDto);
-        user.put("id",id);
-        response = new ResponseEntity<>(user,HttpStatus.CREATED);
+        if (id != null){
+            user.put("id",id);
+            response = new ResponseEntity<>(user,HttpStatus.CREATED);
+        }
         return response;
     }
 }
