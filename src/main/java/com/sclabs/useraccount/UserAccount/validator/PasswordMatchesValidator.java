@@ -1,9 +1,9 @@
-package com.sclabs.useraccount.UserAccount.util;
+package com.sclabs.useraccount.UserAccount.validator;
 
 import com.sclabs.useraccount.UserAccount.dto.CreateUserDto;
-
 import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;
+
 
 public class PasswordMatchesValidator implements ConstraintValidator<PasswordMatches,Object> {
     @Override

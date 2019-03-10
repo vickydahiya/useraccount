@@ -1,9 +1,8 @@
 package com.sclabs.useraccount.UserAccount.dto;
 
 import com.sclabs.useraccount.UserAccount.common.Name;
-import com.sclabs.useraccount.UserAccount.util.ValidEmail;
+import com.sclabs.useraccount.UserAccount.validator.ValidEmail;
 
-import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
