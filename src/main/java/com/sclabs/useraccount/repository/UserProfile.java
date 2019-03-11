@@ -1,7 +1,6 @@
-package com.sclabs.useraccount.UserAccount.repository;
+package com.sclabs.useraccount.repository;
 
-import com.sclabs.useraccount.UserAccount.common.Address;
-import jdk.nashorn.internal.ir.annotations.Reference;
+import com.sclabs.useraccount.common.Address;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;

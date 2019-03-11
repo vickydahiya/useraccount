@@ -1,4 +1,4 @@
-package com.sclabs.useraccount.UserAccount.repository;
+package com.sclabs.useraccount.repository;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;

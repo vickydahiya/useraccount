@@ -1,6 +1,6 @@
-package com.sclabs.useraccount.UserAccount.repository;
+package com.sclabs.useraccount.repository;
 
-import com.sclabs.useraccount.UserAccount.common.Name;
+import com.sclabs.useraccount.common.Name;
 import com.sun.istack.internal.NotNull;
 import lombok.Builder;
 

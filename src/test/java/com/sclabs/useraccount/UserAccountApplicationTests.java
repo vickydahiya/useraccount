@@ -1,4 +1,4 @@
-package com.sclabs.useraccount.UserAccount;
+package com.sclabs.useraccount;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

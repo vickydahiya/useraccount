@@ -1,4 +1,4 @@
-package com.sclabs.useraccount.UserAccount.exception;
+package com.sclabs.useraccount.exception;
 
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;

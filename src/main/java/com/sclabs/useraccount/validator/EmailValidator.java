@@ -1,4 +1,4 @@
-package com.sclabs.useraccount.UserAccount.validator;
+package com.sclabs.useraccount.validator;
 
 import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;

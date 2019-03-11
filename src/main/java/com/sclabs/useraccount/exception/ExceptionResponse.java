@@ -1,4 +1,4 @@
-package com.sclabs.useraccount.UserAccount.exception;
+package com.sclabs.useraccount.exception;
 
 import java.util.Date;
 

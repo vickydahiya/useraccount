@@ -1,4 +1,4 @@
-package com.sclabs.useraccount.UserAccount.controller;
+package com.sclabs.useraccount.controller;
 
 import org.springframework.web.bind.annotation.RestController;
 

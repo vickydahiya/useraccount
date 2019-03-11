@@ -1,4 +1,4 @@
-package com.sclabs.useraccount.UserAccount.common;
+package com.sclabs.useraccount.common;
 
 import javax.persistence.Embeddable;
 import javax.validation.constraints.NotNull;

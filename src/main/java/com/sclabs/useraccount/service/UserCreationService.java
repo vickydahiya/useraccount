@@ -1,9 +1,9 @@
-package com.sclabs.useraccount.UserAccount.service;
+package com.sclabs.useraccount.service;
 
-//import com.sclabs.useraccount.UserAccount.common.Name;
-import com.sclabs.useraccount.UserAccount.dto.CreateUserDto;
-import com.sclabs.useraccount.UserAccount.repository.UserInfo;
-import com.sclabs.useraccount.UserAccount.repository.UserInfoRepository;
+//import Name;
+import com.sclabs.useraccount.dto.CreateUserDto;
+import com.sclabs.useraccount.repository.UserInfo;
+import com.sclabs.useraccount.repository.UserInfoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
