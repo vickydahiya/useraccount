@@ -7,6 +7,7 @@ import com.sclabs.useraccount.repository.UserInfoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import javax.transaction.Transactional;
 import java.time.Instant;
 import java.util.Date;
 
@@ -20,6 +21,7 @@ public class UserCreationService {
         this.userInfoRepository = userInfoRepository;
     }
 
+    @Transactional
     public Long createUser(CreateUserDto createUserDto){
         //UserInfo ui = UserInfo.builder().
         UserInfo userInfo = new UserInfo();
