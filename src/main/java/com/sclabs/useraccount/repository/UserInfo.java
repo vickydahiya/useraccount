@@ -1,7 +1,7 @@
 package com.sclabs.useraccount.repository;
 
 import com.sclabs.useraccount.common.Name;
-import com.sun.istack.internal.NotNull;
+import javax.validation.constraints.NotNull;
 import lombok.Builder;
 
 import javax.persistence.*;
