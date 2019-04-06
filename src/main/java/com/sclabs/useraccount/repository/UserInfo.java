@@ -2,12 +2,12 @@ package com.sclabs.useraccount.repository;
 
 import com.sclabs.useraccount.common.Name;
 import javax.validation.constraints.NotNull;
-import lombok.Builder;
+//import lombok.Builder;
 
 import javax.persistence.*;
 import java.util.Date;
 
-@Builder
+//@Builder
 @Entity(name = "user_info")
 public class UserInfo {
 

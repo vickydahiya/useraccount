@@ -6,6 +6,8 @@ import org.junit.Before;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
+import static org.junit.Assert.assertEquals;
+
 public class UserCreationServiceTest {
 
     @Autowired
@@ -24,6 +26,13 @@ public class UserCreationServiceTest {
 
     @Test
     public void dummyTest(){
+        assertEquals("ABC","ABC");
+        //System.out.println("Pass");
+    }
 
+    @Test
+    public void dummytestTwo(){
+        System.out.println("Pass");
     }
 }
+
