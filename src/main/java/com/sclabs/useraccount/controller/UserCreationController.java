@@ -1,6 +1,7 @@
 package com.sclabs.useraccount.controller;
 
 import com.sclabs.useraccount.dto.CreateUserDto;
+import com.sclabs.useraccount.repository.UserInfo;
 import com.sclabs.useraccount.service.UserCreationService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.env.Environment;
@@ -34,9 +35,9 @@ public class UserCreationController {
         //System.out.println(request.getRequestURI());
         System.out.println(environmnet.getActiveProfiles());
 
-        Long id =  userCreationService.createUser(createUserDto);
-        if (id != null){
-            user.put("id",id);
+        UserInfo userInfo =  userCreationService.createUser(createUserDto);
+        if (userInfo.getUserId() != null){
+            user.put("id",userInfo.getUserId());
             response = new ResponseEntity<>(user,HttpStatus.CREATED);
         }
         return response;

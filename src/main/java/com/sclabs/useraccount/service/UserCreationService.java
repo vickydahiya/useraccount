@@ -21,8 +21,9 @@ public class UserCreationService {
         this.userInfoRepository = userInfoRepository;
     }
 
+
     @Transactional
-    public Long createUser(CreateUserDto createUserDto){
+    public UserInfo createUser(CreateUserDto createUserDto){
         //UserInfo ui = UserInfo.builder().
         UserInfo userInfo = new UserInfo();
         //Name name = new Name(createUserDto.getFirstName(),createUserDto.getLastName());
@@ -32,8 +33,8 @@ public class UserCreationService {
         userInfo.setPassword(createUserDto.getPassword());
         userInfo.setCreated(Date.from(Instant.now()));
 
-        userInfoRepository.save(userInfo);
-        System.out.println(userInfo.getUserId());
-        return userInfo.getUserId();
+        userInfo = userInfoRepository.save(userInfo);
+        //System.out.println(userInfo.getUserId());
+        return userInfo;
     }
 }
